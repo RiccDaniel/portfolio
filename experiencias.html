@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Portfolio website</title>
+</head>
+
+<body>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("menu-header");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+
+        window.addEventListener('resize', function() {
+            var x = document.getElementById("menu-header");
+
+            if (window.screen.width > 600) {
+                x.style.display = 'flex';
+            } else {
+                x.style.display = 'none';
+            }
+        })
+    </script>
+
+    <!---Cabeçalho-Main-->
+
+    <div class="background">
+        <span class="material-symbols-outlined" onclick="myFunction()">
+            menu
+        </span>
+
+        <nav id="menu-header">
+            <ul class="cabeçalho-link">
+                <a href="index.html">Menu</a>
+                <a href="experiencias.html">Experiencias</a>
+                <a href="projetos.html">Projetos</a>
+            </ul>
+        </nav>
+
+        <div class="Main">
+            <h3>Minhas <b>Experiências</b></h3>
+
+        </div>
+        <!--Main-->
+    </div>
+    <!--background-->
+
+    <div class="Container-serviços">
+
+        <h2 class="title">Linguagens com que já tive contato</h2>
+
+
+        <div class="Caixa">
+            <div class="Card">
+                <img src="php.png">
+                <h5>PHP</h5>
+                <div class="Paragrafo-button">
+                    <p>PHP é uma linguagem de programação voltada para o desenvolvimento de aplicações para a web e para criar sites, favorecendo a conexão entre os servidores e a interface do usuário. </p>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="Card">
+                <img src="Kotlin.png">
+                <h5>Kotlin</h5>
+                <div class="Paragrafo-button">
+                    <p>Kotlin é uma linguagem de programação multiplataforma, orientada a objetos e funcional, concisa e estaticamente tipada, desenvolvida pela JetBrains em 2011 </p>
+
+                </div>
+
+
+
+            </div>
+            <div class="Card">
+                <img src="javascript.png">
+                <h5>JavaScript</h5>
+                <div class="Paragrafo-button">
+                    <p>JavaScript é uma linguagem de programação usada por desenvolvedores para fazer páginas interativas da Internet. As funções de JavaScript podem melhorar a experiência do usuário durante a navegação em um site</p>
+
+                </div>
+            </div>
+
+            <div class="Card">
+                <img src="csharp.png">
+                <h5>C#</h5>
+                <div class="Paragrafo-button">
+                    <p>C é uma linguagem de programação compilada de propósito geral, estruturada, imperativa, procedural, padronizada pela Organização Internacional para Padronização</p>
+
+                </div>
+
+            </div>
+        </div>
+
+
+</html>

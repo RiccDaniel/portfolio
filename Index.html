@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Ricardo Daniel</title>
+</head>
+
+<body>
+    <!---Button function-->
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("menu-header");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+
+        window.addEventListener('resize', function() {
+            var x = document.getElementById("menu-header");
+
+            if (window.screen.width > 600) {
+                x.style.display = 'flex';
+            } else {
+                x.style.display = 'none';
+            }
+        })
+
+        function clickWpp() {
+            location.href = "https://api.whatsapp.com/send?phone=5545999991415&text=Ol%C3%A1!%20Gostaria%20de%20conversar%20com%20Ricardo%20Daniel!"
+        }
+    </script>
+
+    <!---Cabeçalho-Main-->
+
+    <div class="background">
+        <span class="material-symbols-outlined" onclick="myFunction()">
+            menu
+        </span>
+
+        <nav id="menu-header">
+            <ul class="cabeçalho-link">
+                <a href="index.html">Menu</a>
+                <a href="experiencias.html">Experiencias</a>
+                <a href="projetos.html">Projetos</a>
+            </ul>
+        </nav>
+
+        <div class="Main">
+            <br><br><br><br><br>
+            <h3>Olá, meu nome é <b>Ricardo Daniel</b></h3>
+            <h3>Eu sou um aluno de Desenvolvimento web</h3>
+        </div>
+
+    </div>
+    <!--background-->
+
+
+    <!--Começo-da-seção-sobre-->
+
+    <section class="background-color-Sobre">
+        <div class="main-sobre">
+            <img src="eu.jpeg">
+            <div class="Text-sobre">
+                <h2>Sobre-Mim</h2>
+                <h5>Sou <span>Estudante</span></h5>
+                <p>Eu sou um aluno de <span>Engenharia de Software</span> pela <span>Universidade Tecnológica Federal do Paraná -
+                            Dois Vizinhos</span>, estou no fim do meu 4° período, e procuro conhecer cada dia mais novos métodos de compreensão na área de <span>Requisitos de Software</span> para um dia me tornar um PO.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="me-contate">
+        <p>Me chame no whatsapp!</p>
+        <button onclick="clickWpp()" type="button">
+            Clique aqui
+        </button>
+    </div>
+
+    <footer>
+        <h4>Outras redes sociais!
+        </h4>
+        <div class="Redes-sociais">
+            <a href="https://www.linkedin.com/in/ricardo-daniel-gayoso-torrez-31423221a/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/ricardo_torrezz/">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
